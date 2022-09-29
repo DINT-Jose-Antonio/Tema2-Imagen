@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tema2_Imagen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_Imagen"
+        mc:Ignorable="d"
+        Title="Imagen" Height="450" Width="800" Icon="Assets/starwars.ico">
+    <Grid>
+        <Image x:Name="StarWarsImage" HorizontalAlignment="Left" Height="356" Margin="29,36,0,0" VerticalAlignment="Top" Width="479" Source="Assets/episodioIV.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="577,45,0,0" TextWrapping="Wrap" Text="Opacidad" VerticalAlignment="Top" Height="33" Width="109" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="577,235,0,0" TextWrapping="Wrap" Text="Ajuste" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <StackPanel HorizontalAlignment="Left" Height="147" Margin="577,272,0,0" VerticalAlignment="Top" Width="205">
+            <RadioButton x:Name="RellenoButton" Content="Relleno (Fill)" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="RellenoButton_Checked" IsChecked="True"/>
+            <RadioButton x:Name="UniformeButton" Content="Uniforme (Uniform)" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="UniformeButton_Checked" Margin="0,7,0,0"/>
+            <RadioButton x:Name="RellenoUniformeButton" Content="Relleno Uniforme (UniformToFill)" HorizontalAlignment="Left" Margin="0,7,-45,0" VerticalAlignment="Top" Checked="RellenoUniformeButton_Checked"/>
+            <RadioButton x:Name="SinAjusteButton" Content="Sin ajuste (None)" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="SinAjusteButton_Checked" Margin="0,7,0,0"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="101" Margin="577,83,0,0" VerticalAlignment="Top" Width="126">
+            <RadioButton x:Name="AltaButton" Content="Alta" HorizontalAlignment="Left" VerticalAlignment="Top" Checked="AltaButton_Checked" IsChecked="True"/>
+            <RadioButton x:Name="MediaButton" Content="Media" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,7,0,0" Checked="MediaButton_Checked"/>
+            <RadioButton x:Name="BajaButton" Content="Baja" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,7,0,0" Checked="BajaButton_Checked"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
